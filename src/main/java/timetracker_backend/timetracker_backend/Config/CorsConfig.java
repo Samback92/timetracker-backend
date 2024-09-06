@@ -13,7 +13,7 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/*")
+                registry.addMapping("/**")
                         .allowedOrigins("https://jellyfish-app-m6ju4.ondigitalocean.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
